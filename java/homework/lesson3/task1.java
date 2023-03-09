@@ -6,14 +6,22 @@ import java.util.Random;
 
 public class task1 {
     public static void main(String[] args) {
+        List<Integer> list = initList();
+        
+        System.out.println(list);
+        list = mergeSort(list);
+        System.out.println(list);
+
+    }
+
+
+    private static List<Integer> initList(){
         Random random = new Random();
         List<Integer> list = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
             list.add(random.nextInt(1, 20));
         }
-        System.out.println(list);
-        list = mergeSort(list);
-        System.out.println(list);
+        return list;
 
     }
 

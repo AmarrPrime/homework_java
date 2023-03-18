@@ -22,4 +22,4 @@ public class task1 {
         System.out.println(yellowPages);
 
     }
-}11111 gsom
+}

@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Parent {
+public class Parent implements InterfaceHuman {
     String name;
     int age;
     String sex;
@@ -46,5 +46,31 @@ public class Parent {
                 ", height = " + height +
                 '}';
 
+    }
+
+    @Override
+    public void speak() {
+        System.out.println("Arrgghh");
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println("Zzzzzzz");
+    }
+
+    @Override
+    public void cook(InterfaceFood food) {
+        food.getCooked();
+        System.out.println(food.getName()+" smells nice!");
+    }
+
+    @Override
+    public void eat(InterfaceFood food) {
+        System.out.println(food.getName()+" delicious!");
+    }
+
+    @Override
+    public void dance() {
+        System.out.println("Funky town!");
     }
 }
